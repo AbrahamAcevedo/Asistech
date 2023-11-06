@@ -1,0 +1,512 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: 100%;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+h1 
+{
+    font-family: 'Makisupa';
+}
+h2
+{
+    font-family: 'Montagu Slab 24pt SemiBold';
+}
+h3, p
+{
+    font-family: 'Montagu Slab 24pt Light';  
+    font-weight: 550;
+}
+section[id]
+{
+    scroll-margin-top: 70px;
+}
+.cabeza
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: px;
+    background: #2D73DB;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.barra_navegar
+{
+    display: flex;
+    margin-right: 10px;
+    
+}
+.logo
+{
+    margin-left: 30px;
+}
+.logo a
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.barra_navegar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.barra_navegar li
+{
+    font-family: 'Makisupa';
+    display: block;
+    padding: 20px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+}
+.barra_navegar ul
+{
+    display: flex;
+    text-decoration: none;
+}
+.barra_navegar ul li a
+{
+    color: white;
+    list-style: none;
+    
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.barra_navegar ul li a::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #fb7217;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.barra_navegar ul li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.boton_seccion
+{
+    display: inline-block;
+    padding: 10px 40px;
+    border: 10px solid #2D73DB;
+    color: #fff;
+    text-decoration: none;
+    background: #2D73DB;
+    font-size: 10px;
+}
+.boton_seccion a
+{
+    font-family: 'Makisupa';
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a span 
+{
+    animation: 2s waves infinite;
+    display: inline-block;
+    animation-delay: calc(0.1s * var(--n));
+    font-size: 15px;
+}
+@keyframes waves
+{
+    0%,40%,100%{
+        transform: translateY(0px);
+        color: white;
+    }
+    20%{
+        transform: translateY(-15px);
+        color: #fb7217;
+    }
+}
+
+.boton_seccion a:hover
+{
+   text-shadow:5px 5px 20px #fb7217 ;
+   
+}
+.inicio img
+{
+    display: flex;
+    width:100%;
+}
+.flex
+{
+    background-color: #fb7217;
+    width: auto;
+    height: 15px;
+    align-items: center;
+    margin: auto;
+}
+.novedades
+{
+    padding: 20px;
+}
+.Novedades
+{
+    
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    width: auto;
+    height: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 5px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: 2rem auto;
+}
+.Novedades .scroll
+{
+    flex: 0 0 30px;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: center;
+}
+.Calendario
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 60vh !important;
+    background-color: #d2d9db;
+}
+.Calendario h2
+{
+   padding: 20px;
+   
+}
+.Calendario .fecha
+{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.fecha
+{
+    width: 500px;
+    margin-top: 50px;
+    text-align: center;
+    margin: 40px 585px;
+    font-size: 20px;
+}
+li
+{
+    text-align: right;
+    margin: 5px 0px;
+}
+.titulo
+{
+    font-size: 30px;
+    text-align: center;
+}
+ol 
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0px;
+    
+}
+ol .numeros 
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+}
+.numeros li:hover
+{
+    color: #fb7217;
+}
+.Primer_dia
+{
+    grid-column-start: 7;
+}
+.dia
+{
+    background: #fb7217;
+    font-weight: bold;
+    text-align: center;
+}
+.Historia
+{
+    height: auto !important;
+    padding: 30px;
+    display: block;
+}
+.Historia img
+{
+    display: flex;
+}
+.Historia p
+{
+    padding: 30px;
+}
+.persona_hist 
+{
+    text-align: left;
+    display: flex;
+}
+.persona_hist p
+{
+    max-width: 500px;
+}
+.contenedor
+{
+    height: 50vh;
+    display: contents;
+    flex-direction: column(2);
+    justify-content: center;
+    align-items: center;
+}
+.Población
+{
+    height: 60vh;
+    padding: 30px;
+    background: #d2d9db;
+    
+}
+.Población p
+{
+    max-width: auto; 
+    text-align: center;
+}
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.Estudiantes
+{
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50px;
+}
+.Docentes
+{
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: aqua;
+    border-radius: 50px;
+}
+.contenedor .cajas
+{
+    height: auto;
+    width: 20rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0.3 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+.im
+{
+    padding-top: 15px;
+}
+.contenedor .cajas h3
+{
+    padding: 10px;
+}
+.contenedor .cajas h3, .contenedor .cajas p
+{
+    
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.Mision_Vision
+{
+    padding: 30px;
+    height: 60vh;
+}
+.mv2
+{
+    
+    display: flex;
+    flex-direction: column(2);
+    justify-content: space-between;
+    height: 50vh;
+    flex-direction: column(2);
+    margin: 2rem;
+    flex-wrap: wrap;
+   
+}
+h3
+{
+    font-size: 25px;
+}
+.mision h3, .mision p
+{
+    text-align: center;
+    max-width: 500px;
+}
+.vision h3, .vision p
+{
+    text-align: center;
+    max-width: 500px;
+}
+.vision
+{
+    padding-top: 50px;
+}
+.Contacto
+{
+    display: flex;
+    padding-top: 15px;
+    height: 11.5vh !important;
+    background-color: #d2d9db;
+}
+.Contacto .contactanos
+{
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+.contactanos .icon1
+{  
+    display: flex;
+}
+.icon1 h3
+{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.contactanos .icon2
+{
+    display: flex;
+}
+.icon2 h3
+{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.Contacto .redes_sociales
+{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+}
+.redes_sociales .iconos
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column(2);
+    justify-content: space-between;
+    font-size: 20px;
+}
+.iconos a
+{
+    background-color: #d2d9db;
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow:  -3px -3px 7px #fb7217, 3px 3px 5px #ceced1;
+}
+.iconos a:hover::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.iconos a i
+{
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+}
+.iconos a:hover
+{
+    transform: scale(0.9);
+}
+.iconos a .face i
+{
+    color: #0e56e6;
+}
+.iconos a .what i
+{
+    color: green;
+}
+.iconos a .inst i
+{
+    color: #e1306c;
+}
+@media (max-width: 768px)
+{
+    .barra_navegar
+    {
+        display: none;
+    }
+    .titulo
+    {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .Calendario
+    {
+        height: 120vh;
+    }
+    
+    .Historia 
+    {
+        height: 120vh; 
+    }
+    .Población
+    {
+        height: 120vh;
+    }
+    .Mision_Vision
+    {
+        height: 70vh;
+        display: grid;
+    }
+    .Calendario
+    {
+        height: 70vh;
+    }
+    
+}
+
+
