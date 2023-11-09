@@ -1,0 +1,63 @@
+body
+{
+    margin-top: 20px;
+    background-color: lightgray;
+}
+.main
+{
+    padding: 15px;
+}
+.topbar
+{
+    background-color: #2D73DB;
+    overflow: hidden;
+}
+.topbar a
+{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 26px;
+}
+.sidebar
+{
+    background-color: #333;
+    width: 30vh;
+    color: white;
+    height: 85vh;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.sidebar img
+{
+    border-radius: 50%;
+}
+.sidebar h3
+{
+    text-align: center;
+    justify-content: center;
+}
+.sidebar a
+{
+    margin-left: 10px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+.box
+{
+    position: relative;
+    flex-direction: column (2) ;
+    justify-content: space-between;
+}
+
+

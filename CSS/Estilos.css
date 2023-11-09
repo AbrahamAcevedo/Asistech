@@ -82,12 +82,29 @@ section[id]
 {
     color: white;
     list-style: none;
-    
     cursor: pointer;
     position: relative;
     text-decoration: none;
 }
-.barra_navegar ul li a::after
+
+.boton_seccion ul
+{
+    display: flex;
+    padding: 10px 40px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.boton_seccion ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.barra_navegar ul li a::after, .boton_seccion ul li a::after
 {
     content: "";
     position: absolute;
@@ -100,69 +117,33 @@ section[id]
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-.barra_navegar ul li a:hover::after
+
+.barra_navegar ul li a:hover::after, .boton_seccion ul li a:hover::after
 {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.boton_seccion
-{
-    display: inline-block;
-    padding: 10px 40px;
-    border: 10px solid #2D73DB;
-    color: #fff;
-    text-decoration: none;
-    background: #2D73DB;
-    font-size: 10px;
-}
-.boton_seccion a
-{
-    font-family: 'Makisupa';
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-a span 
-{
-    animation: 2s waves infinite;
-    display: inline-block;
-    animation-delay: calc(0.1s * var(--n));
-    font-size: 15px;
-}
-@keyframes waves
-{
-    0%,40%,100%{
-        transform: translateY(0px);
-        color: white;
-    }
-    20%{
-        transform: translateY(-15px);
-        color: #fb7217;
-    }
-}
-
-.boton_seccion a:hover
-{
-   text-shadow:5px 5px 20px #fb7217 ;
-   
-}
 .inicio img
 {
     display: flex;
     width:100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 .flex
 {
     background-color: #fb7217;
     width: auto;
-    height: 15px;
+    height: 10px;
     align-items: center;
     margin: auto;
 }
 .novedades
 {
     padding: 20px;
+    height: 93vh !important;
 }
 .Novedades
 {
@@ -171,7 +152,7 @@ a span
     overflow-x: scroll;
     padding: 24px;
     width: auto;
-    height: auto;
+    justify-content: center;
     scroll-snap-type: x mandatory;
     scroll-padding: 5px;
     border-radius: 8px;
@@ -187,30 +168,38 @@ a span
 }
 .Calendario
 {
-    display: block;
+    
     justify-content: center;
     align-items: center;
-    height: 60vh !important;
+    height: 92.2vh !important;
+    object-fit: cover;
     background-color: #d2d9db;
+    
 }
 .Calendario h2
 {
    padding: 20px;
    
 }
+.fecha h3
+{
+    font-size: 40px;
+}
 .Calendario .fecha
 {
+    padding: 10%;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 .fecha
 {
-    width: 500px;
+    width: 100vh;
     margin-top: 50px;
     text-align: center;
     margin: 40px 585px;
     font-size: 20px;
+    
 }
 li
 {
@@ -219,7 +208,7 @@ li
 }
 .titulo
 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 ol 
@@ -227,14 +216,19 @@ ol
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    padding: 0px;
+    
     
 }
-ol .numeros 
+li
 {
+    
+}
+ol .numeros
+{
+    
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
+    grid-template-columns: repeat(7, 1fr);
 }
 .numeros li:hover
 {
@@ -246,13 +240,14 @@ ol .numeros
 }
 .dia
 {
-    background: #fb7217;
+    background: #2D73DB;
     font-weight: bold;
     text-align: center;
+    font-size: 30px;
 }
 .Historia
 {
-    height: auto !important;
+    height: 85.5vh !important;
     padding: 30px;
     display: block;
 }
@@ -283,7 +278,7 @@ ol .numeros
 }
 .Población
 {
-    height: 60vh;
+    height: 85.5vh !important;
     padding: 30px;
     background: #d2d9db;
     
@@ -345,7 +340,7 @@ ol .numeros
 .Mision_Vision
 {
     padding: 30px;
-    height: 60vh;
+    height: 85.5vh !important;
 }
 .mv2
 {
@@ -353,9 +348,9 @@ ol .numeros
     display: flex;
     flex-direction: column(2);
     justify-content: space-between;
-    height: 50vh;
-    flex-direction: column(2);
-    margin: 2rem;
+    height: 100vh;
+    padding-top: 100px;
+    
     flex-wrap: wrap;
    
 }
@@ -373,15 +368,19 @@ h3
     text-align: center;
     max-width: 500px;
 }
+.mision
+{
+    padding-top: 50px;
+}
 .vision
 {
     padding-top: 50px;
 }
 .Contacto
 {
-    display: flex;
+    display: block;
     padding-top: 15px;
-    height: 11.5vh !important;
+    height: 10vh !important;
     background-color: #d2d9db;
 }
 .Contacto .contactanos
@@ -447,15 +446,18 @@ h3
     background: #ecf0f3;
     box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
 }
+
 .iconos a i
 {
-    position: absolute;
+    position: relative;
     z-index: 3;
-    text-align: center;
+    justify-content: center;
+   
     width: 100%;
     height: 100%;
     font-size: 25px;
-    line-height: 60px;
+    line-height: 30px;
+    text-align: center;
 }
 .iconos a:hover
 {
@@ -488,7 +490,18 @@ h3
     {
         height: 120vh;
     }
-    
+    .fecha h3
+    {
+        font-size: 30px;
+    }
+    .dia, .numeros
+    {
+        font-size: 20px;
+    }
+    .fecha
+    {
+        width: 60vh;
+    }
     .Historia 
     {
         height: 120vh; 
@@ -499,8 +512,13 @@ h3
     }
     .Mision_Vision
     {
-        height: 70vh;
-        display: grid;
+        height: 77vh;
+        
+    }
+    .mv2
+    {
+        padding-top: -20px;
+        
     }
     .Calendario
     {
