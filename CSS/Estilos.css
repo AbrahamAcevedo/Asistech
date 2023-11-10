@@ -475,16 +475,21 @@ h3
 {
     color: #e1306c;
 }
-@media (max-width: 768px)
+
+/** mobile **/
+@media (max-width:767px)
 {
     .barra_navegar
     {
         display: none;
     }
-    .titulo
+    .novedades
     {
-        margin-bottom: 0;
-        font-size: 40px;
+        max-height: 90vh;
+    }
+    .Novedades
+    {
+        padding-top: 15vh;
     }
     .Calendario
     {
@@ -492,39 +497,67 @@ h3
     }
     .fecha h3
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .dia, .numeros
     {
         font-size: 20px;
     }
-    .fecha
+    .Calendario .fecha
     {
-        width: 60vh;
+        max-width: 40vh;
+        padding-top: 15vh;
     }
     .Historia 
     {
-        height: 120vh; 
+      
+        min-height: 120vh;
+        font-size: 15px;
+    }
+    .persona_hist img
+    {
+        height: 150px;
+    }
+    .persona_hist p
+    {
+        padding-right: 0px;
     }
     .Población
     {
-        height: 120vh;
+        min-height: 120vh;
     }
-    .Mision_Vision
+    .mv2{
+        padding-top: 10px;
+    }
+    .mv2 .vision
     {
-        height: 77vh;
-        
+        justify-content: space-between;
+        padding-bottom: 50vh;
     }
-    .mv2
+    .Contacto
     {
-        padding-top: -20px;
-        
+        min-height: 10vh;
     }
-    .Calendario
+    .Contacto .contactanos i, .Contacto .contactanos h3
     {
-        height: 70vh;
+        font-size: 12px;
     }
-    
+    .Contacto .redes_sociales i, .Contacto .redes_sociales h3
+    {
+        font-size: 20px;
+    }
+}
+
+/** tablet **/
+@media (min-width: 768px) and (max-width: 990px)
+{
+
+}
+
+/** escritorio **/
+@media (min-width:991px)
+{
+
 }
 
 
