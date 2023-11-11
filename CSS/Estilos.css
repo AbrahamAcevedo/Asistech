@@ -26,22 +26,16 @@ section[id]
 {
     scroll-margin-top: 70px;
 }
+
 .cabeza
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: px;
     background: #2D73DB;
-    position: fixed;
     width: 100%;
     z-index: 100;
-}
-.barra_navegar
-{
-    display: flex;
-    margin-right: 10px;
-    
+    position: fixed;
 }
 .logo
 {
@@ -57,21 +51,24 @@ section[id]
 .barra_navegar
 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid #fb7217;
+    position: fixed;
+    top: 5.5%;
+    background-color: white;
 }
 .barra_navegar li
 {
+   
     font-family: 'Makisupa';
-    display: block;
-    padding: 20px 15px;
-    color: #fff;
+    display: flex;
+    padding: 5px 10px;
     text-transform: uppercase;
     font-size: 15px;
     text-decoration: none;
     cursor: pointer;
     list-style: none;
+    
 }
 .barra_navegar ul
 {
@@ -80,11 +77,40 @@ section[id]
 }
 .barra_navegar ul li a
 {
-    color: white;
+    color: black;
     list-style: none;
     cursor: pointer;
     position: relative;
     text-decoration: none;
+}
+
+.buscar_contenedor
+{
+    display: flex;
+}
+.buscar_contenedor input
+{
+    width: 250px;
+    height: 10px;
+    padding: 15px;
+    margin-left: 71vh;
+    outline: none;
+    margin-top: 2px;
+    padding-right: 35px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.buscar_contenedor button
+{
+    background-color: #fb7217;
+    width: 40px;
+    height: 35px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-top: 2px;
 }
 
 .boton_seccion ul
@@ -136,7 +162,7 @@ section[id]
 {
     background-color: #fb7217;
     width: auto;
-    height: 10px;
+    height: 5px;
     align-items: center;
     margin: auto;
 }
@@ -380,7 +406,7 @@ h3
 {
     display: block;
     padding-top: 15px;
-    height: 10vh !important;
+    height: 10vh;
     background-color: #d2d9db;
 }
 .Contacto .contactanos
@@ -545,6 +571,10 @@ h3
     .Contacto .redes_sociales i, .Contacto .redes_sociales h3
     {
         font-size: 20px;
+    }
+    .ftb
+    {
+        min-height: 10vh;
     }
 }
 
