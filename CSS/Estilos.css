@@ -54,7 +54,7 @@ section[id]
     width: 100%;
     border-bottom: 2px solid #fb7217;
     position: fixed;
-    top: 5.5%;
+    top: 5%;
     background-color: white;
 }
 .barra_navegar li
@@ -96,7 +96,7 @@ section[id]
     margin-left: 71vh;
     outline: none;
     margin-top: 2px;
-    padding-right: 35px;
+    padding-right: 12vh;
     border-bottom-left-radius: 5px;
     font-size: 1rem;
     
@@ -110,7 +110,7 @@ section[id]
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .boton_seccion ul
@@ -197,14 +197,14 @@ section[id]
     
     justify-content: center;
     align-items: center;
-    height: 92.2vh !important;
+    height: 92.8vh !important;
     object-fit: cover;
     background-color: #d2d9db;
     
 }
 .Calendario h2
 {
-   padding: 20px;
+   padding: 30px;
    
 }
 .fecha h3
@@ -245,10 +245,6 @@ ol
     
     
 }
-li
-{
-    
-}
 ol .numeros
 {
     
@@ -273,7 +269,7 @@ ol .numeros
 }
 .Historia
 {
-    height: 85.5vh !important;
+    height: 86.8vh !important;
     padding: 30px;
     display: block;
 }
@@ -283,10 +279,12 @@ ol .numeros
 }
 .Historia p
 {
-    padding: 30px;
+    padding-top: 20vh;
+    
 }
 .persona_hist 
 {
+
     text-align: left;
     display: flex;
 }
@@ -304,7 +302,7 @@ ol .numeros
 }
 .Población
 {
-    height: 85.5vh !important;
+    height: 86.8vh !important;
     padding: 30px;
     background: #d2d9db;
     
@@ -366,7 +364,7 @@ ol .numeros
 .Mision_Vision
 {
     padding: 30px;
-    height: 85.5vh !important;
+    height: 86.8vh !important;
 }
 .mv2
 {
@@ -374,8 +372,10 @@ ol .numeros
     display: flex;
     flex-direction: column(2);
     justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 20vh;
     
     flex-wrap: wrap;
    

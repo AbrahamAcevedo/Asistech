@@ -1,40 +1,111 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
-    margin-top: 20px;
     background-color: lightgray;
 }
-.main
+.cabeza
 {
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2D73DB;
+    width: 100%;
+    height: 46px;
+    z-index: 100;
 }
-.topbar
+.logo
 {
-    background-color: #2D73DB;
-    overflow: hidden;
+    margin-left: 30px;
 }
-.topbar a
+.logo a
 {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 20px 26px;
     text-decoration: none;
-    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.barra_navegar
+{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #fb7217;
+    background-color: white;
+}
+.barra_navegar li
+{
+   
+    font-family: 'Makisupa';
+    display: flex;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    
+}
+.barra_navegar ul
+{
+    display: flex;
+    text-decoration: none;
+}
+.barra_navegar ul li a
+{
+    color: black;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.mt-3 ul
+{
+    text-decoration: none;
+    list-style: none;
+}
+.mt-3 ul li a
+{
+    color: white;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.barra_navegar ul li a::after, .mt-3 ul li a::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #fb7217;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.barra_navegar ul li a:hover::after, .mt-3 ul li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .sidebar
 {
-    background-color: #333;
+    background-color: #2D73DB;
     width: 30vh;
     color: white;
-    height: 85vh;
-    float: left;
+    height: 93vh;
     text-align: center;
-    padding-top: 10px;
-    margin-top: 10px;
+    float: left;
 }
 .sidebar img
 {
     border-radius: 50%;
+    padding-top: 50px;
 }
 .sidebar h3
 {
@@ -53,11 +124,45 @@ body
     padding-right: 10px;
     padding-top: 20px;
 }
-.box
+
+.card
 {
     position: relative;
-    flex-direction: column (2) ;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
+.m-3
+{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.nombre, .respuesta
+{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.respuesta
+{
+    background-color: #d2d9db;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nombre
+{
+    font-size: 20px;
+}
+.content
+{
+    background-color: whitesmoke;
+   
+    height: 60vh;
+}
+
+hr
+{
+    border-color: #fb7217;
+}
+
 
 
