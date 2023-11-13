@@ -54,7 +54,7 @@ section[id]
     width: 100%;
     border-bottom: 2px solid #fb7217;
     position: fixed;
-    top: 5%;
+    top: 7.3%;
     background-color: white;
 }
 .barra_navegar li
@@ -96,7 +96,6 @@ section[id]
     margin-left: 71vh;
     outline: none;
     margin-top: 2px;
-    padding-right: 12vh;
     border-bottom-left-radius: 5px;
     font-size: 1rem;
     
@@ -110,7 +109,7 @@ section[id]
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .boton_seccion ul
