@@ -54,7 +54,7 @@ section[id]
     width: 100%;
     border-bottom: 2px solid #fb7217;
     position: fixed;
-    top: 7.3%;
+    top: 5%;
     background-color: white;
 }
 .barra_navegar li
@@ -109,7 +109,7 @@ section[id]
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 3.5px;
 }
 
 .boton_seccion ul
@@ -187,7 +187,7 @@ section[id]
 .Novedades .scroll
 {
     flex: 0 0 30px;
-    padding: 24px;
+    margin-top: 25vh;
     border-radius: 8px;
     scroll-snap-align: center;
 }
@@ -365,20 +365,6 @@ ol .numeros
     padding: 30px;
     height: 86.8vh !important;
 }
-.mv2
-{
-    
-    display: flex;
-    flex-direction: column(2);
-    justify-content: space-between;
-    padding-left: 150px;
-    padding-right: 150px;
-    height: 100vh;
-    padding-top: 20vh;
-    
-    flex-wrap: wrap;
-   
-}
 h3
 {
     font-size: 25px;
@@ -393,13 +379,38 @@ h3
     text-align: center;
     max-width: 500px;
 }
+.Mision_Vision img
+{
+    display: flex;
+    float: left;
+    height: 60vh;
+    width: 60vh;
+    padding-top: 24.8vh;
+    padding-left: 20vh;
+    
+}
 .mision
 {
-    padding-top: 50px;
+    padding-top: 200px;
 }
 .vision
 {
     padding-top: 50px;
+}
+.mv2
+{
+    display: flex;
+    background-color: #2D73DB;
+    height: 100%;
+    background: linear-gradient(to right, #72a6f4, #2D73DB);
+    color: #fff;
+    margin-left: 100vh;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 150px 0 0 100px;
+    flex-wrap: wrap;
 }
 .Contacto
 {

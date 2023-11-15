@@ -1,0 +1,215 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: #d2d9db;
+}
+header {
+    background-color: #2D73DB;
+    
+  }
+  
+  header img {
+    height: 60px;
+    width: 120px;;
+    
+  }
+  .img_left
+{
+    display: inline-flex;
+    justify-content: left;
+    text-align: left;
+}
+  .img_right{
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid #222;
+  }
+
+  
+  .nav_bar 
+  {
+    background-color: white;
+    text-align: left;
+    font-family: 'Makisupa';
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #fb7217;
+  }
+
+
+  .nav_bar a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+  }
+  .nav_bar  a::after, .boton_seccion ul li a::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: #fb7217;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav_bar a:hover::after, .boton_seccion ul li a:hover::after
+{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  .asist
+  {
+    display: flex;
+  }
+  .asist i, .asist h2
+  {
+    font-size: 60px;
+  }
+  .asist i, .asist h2
+  {
+    padding-left: 20px;
+  }
+ .slow th, .show td
+ {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 71.5px;
+    
+ }
+ .boton-modal
+ {
+    margin-top: 40px;
+    margin-left: 120px;
+ }
+ .boton-modal label
+ {
+    padding: 10px  15px;
+    background-color: #2D73DB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms ease;
+ }
+ .boton-modal label:hover
+ {
+    color: #fb7217;
+ }
+ #btn-modal
+ {
+    display: none;
+ }
+ .container-modal
+ {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+ }
+ #btn-modal:checked ~ .container-modal
+ {
+    display: flex;
+ }
+ .content-modal
+ {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+ }
+ .content-modal h4
+ {
+    margin-bottom: 15px;
+ }
+ .v1, .v2, .v3
+ {
+    display: flex;
+ }
+ .v2, .v3
+ {
+    padding-top: 20px;
+ }
+ .v1 p
+ {
+    padding-left: 120px;
+ }
+ .v2 input
+ {
+    margin-left: 110px;
+ }
+ .v3 h4
+ {
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ .v3 input
+ {
+    padding-left: 2px;
+ }
+ .content-modal .btn-cerrar
+ {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ }
+ .content-modal .btn-cerrar label
+ {
+    padding: 7px 10px;
+    background-color: #2D73DB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+ }
+ .content-modal .btn-cerrar label:hover
+ {
+    color: #fb7217;
+ }
+ table
+ {
+    display: flex;
+    font-size: 20px;
+    margin-top:80px;
+    background-color: white;
+    border-collapse: collapse;
+    margin-left: 120px;
+    margin-right: 120px;
+ }
+ .slow, .show
+ {
+    border-top: 2px solid gray;    
+ }
+
+.icon a i
+{
+    color: #2D73DB;
+}
+.icon .verde i
+{
+    color: green;
+}
