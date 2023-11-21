@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
 }
+body
+{
+  background-color: #d2d9db;
+}
 header {
     background-color: #2D73DB;
     
@@ -46,10 +50,96 @@ header {
     padding-bottom: 10px;
     border-bottom: 5px solid #fb7217;
   }
-
-
   .nav a {
     color: black;
     text-decoration: none;
     padding: 5px 20px;
+  }
+  .btn1
+  {
+    margin-left: 10vh;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #2D73DB;
+    border: none;
+    border-radius: 8px;
+    color: white;
+  }
+  .btn1:hover
+  {
+    box-shadow: 0 0 15px #fb7217;
+  }
+  .btn2
+  {
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #2D73DB;
+    border: none;
+    border-radius: 8px;
+    color: white;
+  }
+  .btn2:hover
+  {
+    box-shadow: 0 0 15px #fb7217;
+  }
+  .contenedor
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50vh;
+    width: 55vh;
+    flex-direction: column;
+    margin-left: 60vh;
+    margin-top: 20vh;
+    box-shadow: 0 0 15px #fb7217;
+  }
+  .nom, .usua, .contra, .id, .clase, .Email 
+  {
+    display: flex;
+    margin-top: 20px;
+  }
+  .nom input, .usua input, .contra input, .id input, .clase input, .Email input
+  {
+    margin-left: 20px;
+    padding: 10px;
+  }
+  input
+  {
+    border-radius: 8px;
+    outline: none;
+  }
+  .agregar
+  {
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: #2D73DB;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .agregar:hover
+  {
+    box-shadow: 0 0 15px #fb7217;
+  }
+  .usua input
+  {
+    padding-right: 17px;
+  }
+  .contra input
+  {
+    padding-right: 65px;
+  }
+  .id input
+  {
+    padding-right: 70px;
+  }
+  .clase input
+  {
+    padding-right: 35px;
+  }
+  .Email input
+  {
+    padding-right: 110px;
   }

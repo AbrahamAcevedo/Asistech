@@ -95,6 +95,49 @@ header {
     padding-right: 71.5px;
     
  }
+ .buscar_contenedor
+{
+    display: flex;
+    margin-top: 10px;
+}
+.buscar_contenedor input
+{
+    width: 250px;
+    height: 10px;
+    padding: 15px;
+    margin-left: 101vh;
+    outline: none;
+    margin-top: 2px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.buscar_contenedor button
+{
+    background-color: #fb7217;
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    
+    
+}
+button i
+{
+   transform: scale(0.4);
+   display: flex;
+   align-content: center;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin-top: -10px;
+   margin-left: -8px;
+
+}
+
  .boton-modal
  {
     margin-top: 40px;
@@ -116,16 +159,17 @@ header {
    margin-top: 40px;
    margin-left: 90px;
    
+   
  }
  .all label
  {
    padding: 10px  15px;
-   background-color: #2D73DB;
-   color: white;
+   background-color: #2D73DB;  
    border-radius: 8px;
    cursor: pointer;
    margin-left: 30px;
  }
+ 
  label a
  {
    text-decoration: none;
@@ -139,50 +183,12 @@ header {
  .persona
  {
    font-size: 20px;
-   padding-top: 40px;
+   padding-top: 50px;
    margin-left: 120px;
  }
- .buscar_contenedor
+ .boton-modal label:hover
  {
-     display: flex;
-     margin-top: 10px;
- }
- .buscar_contenedor input
- {
-     width: 250px;
-     height: 10px;
-     padding: 15px;
-     margin-left: 101vh;
-     outline: none;
-     margin-top: 2px;
-     border-bottom-left-radius: 5px;
-     font-size: 1rem;
-     
- }
- 
- .buscar_contenedor button
- {
-     background-color: #fb7217;
-     width: 40px;
-     height: 40px;
-     margin-top: 2px;
-     color: white;
-     border-radius: 0 5px 5px 0;
-     cursor: pointer;
-     
-     
- }
- button i
- {
-    transform: scale(0.4);
-    display: flex;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px;
-    margin-left: -8px;
- 
+    color: #fb7217;
  }
  #btn-modal
  {
@@ -273,6 +279,17 @@ header {
     margin-left: 120px;
     margin-right: 120px;
     box-shadow: 0 0 25px #2D73DB;
+ }
+ 
+ .show .verde2 i
+ {
+   font-size: 50px;
+   color: #00FF00;
+ }
+ .show .rojo i
+ {
+   font-size: 50px;
+   color: red;
  }
  .slow, .show
  {
