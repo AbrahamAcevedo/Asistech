@@ -99,6 +99,8 @@ header {
  {
     margin-top: 40px;
     margin-left: 120px;
+    justify-content: space-between;
+    margin-right: 40px;
  }
  .boton-modal label
  {
@@ -109,6 +111,21 @@ header {
     cursor: pointer;
     transition: all 300ms ease;
  }
+ .all
+ {
+   margin-top: 40px;
+   margin-left: 90px;
+   
+ }
+ .all label
+ {
+   padding: 10px  15px;
+   background-color: #2D73DB;
+   color: white;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-left: 30px;
+ }
  .boton-modal label:hover
  {
     color: #fb7217;
@@ -117,6 +134,7 @@ header {
  {
     display: none;
  }
+ 
  .container-modal
  {
     width: 100%;

@@ -293,7 +293,28 @@ body { padding: 0;
     }
     table
     {
+        display: flex;
         color: black;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0 0 25px #2D73DB;
+        
+       
+    }
+    th, tr
+    {
+      padding-left: 70px; 
+      padding-right: 60px;   
+        
+    }
+    th
+    {
+      background-color: #fb7217;
+      
     }
     .historial
     {
@@ -305,4 +326,37 @@ body { padding: 0;
         
     }
     
+    /** mobile **/
+@media (max-width:767px)
+{
+  .nav_bar
+  {
+    font-size: 10px;
+  }
+  .nav_bar a
+  {
+    padding: 0 10px;
+  }
+  table
+    {
+      display: flex;
+        color: black;
+        margin-top: 40px;
+        padding-left: 45%;
+        box-shadow: none;
+        overflow: auto;
+        
+    }
+    th, tr
+    {
+      padding-left: 10px; 
+      padding-right: 10px;   
+        
+    }
+    th
+    {
+      background-color: #fb7217;
+      
+    }
+}
     

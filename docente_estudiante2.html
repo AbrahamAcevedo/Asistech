@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/asistencia.css">
+    <link rel="stylesheet" href="./CSS/docentes_estudiantes.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
@@ -13,63 +13,58 @@
         <img class="img_right" src="./SRC/img/perfil.png" alt="">
     </header>
     <nav class="nav_bar">
-        <a href="./Perfil.html">Perfil</a>
-        <a href="./Editar.html">Editar Perfil</a>
+        <a href="./docente_estudiante.html">Asistencia </a>
+        <a href="./Agregar.html">Agregar </a>
+        <a href="./Modificar.html">Modificar </a>
+        <a href="./crear_usuario.html">Crear usuario</a>
         <a href="./Iniciar_Sesión.html">Cerrar sesión</a>
     </nav>
     <div class="asist">
         <i class="bi bi-people"></i>
         <h2>Asistencia</h2>
     </div>
-    
-    <div class="boton-modal">
-        <label for="btn-modal">
-            Añadir Asistencia
+    </div>
+    <div class="all">
+        <label for="btn_all">
+            <a href="./docente_estudiante2.html">Docentes</a>
+        </label>
+        <label for="btn-all" >
+            <a href="./docente_estudiante.html">Estudiantes</a>
         </label>
     </div>
+    
+        
+    
     <input type="checkbox" id="btn-modal">
-    <div class="container-modal">
-        <div class="content-modal">
-            <div class="v1">
-                <h3>Tipo</h3> <p>todos los estudiantes</p>
-            </div>
-            <div class="v2">
-                <h3>Fecha</h3> <input type="date">
-            </div>
-            <div class="v3">
-                <h3>Tiempo</h3> <h4>desde</h4><input type="time"> <h4>a</h4> <input type="time">
-            </div>
-            
-            <div class="btn-cerrar">
-                <label for="btn-modal">Guardar</label>
-            </div>
-        </div>
-    </div>
     <table>
         <tr class="slow">
             <th class="checkbox"><input type="checkbox"></th>
             <th colspan="2">Fecha</th>
-            <th>Tiempo</th>
-            <th>Tipo</th>
-            <th>Descripcion</th>
+            <th>hora de entrada</th>
+            <th>huella</th>
+            <th>hora de salida</th>
+            <th>huella</th>
             <th>Acciones</th>
         </tr>
         <tr class="show">
             <td class="checkbox"><input type="checkbox"></td>
-            <td colspan="2">lun 6 nov 2023 - vie 10 nov 2023</td>
-            <td>7:00AM - 12:00AM</td>
+            <td colspan="2">lun 6 nov 2023</td>
+            <td>7:00AM</td>
             <td>Todos los estudiantes</td>
+            <td>12:00AM</td>
             <td>Sesion de clases normales</td>
+            
             <td class="icon"><a class="verde" href="./Asistencia_page2.html"><i class="bi bi-arrow-90deg-right"></i></a>
                 <a href=""><i class="bi bi-gear"></i></a>
                 <a href=""><i class="bi bi-trash3"></i></a></td>
         </tr>
         <tr class="show">
             <td class="checkbox"><input type="checkbox"></td>
-            <td colspan="2">lun 6 nov 2023 - vie 10 nov 2023</td>
-            <td>7:00AM - 12:00AM</td>
-            <td>Todos los estudiantes</td>
-            <td>Sesion de clases normales</td>
+            <td colspan="2">lun 6 nov 2023</td>
+            <td>7:00AM</td>
+            <td class="verde"><i class="bi bi-fingerprint"></i></td>
+            <td>12:00AM</td>
+            <td class="verde"><i class="bi bi-fingerprint"></i></td>
             <td class="icon"><a class="verde" href="./Asistencia_page2.html"><i class="bi bi-arrow-90deg-right"></i></a>
                 <a href=""><i class="bi bi-gear"></i></a>
                 <a href=""><i class="bi bi-trash3"></i></a></td>

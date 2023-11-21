@@ -586,6 +586,15 @@ h3
     {
         min-height: 10vh;
     }
+    .Mision_Vision img
+    {
+        display: none;
+    }
+    .mv2
+    {
+        margin: auto;
+    }
+    
 }
 
 /** tablet **/

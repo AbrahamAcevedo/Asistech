@@ -225,3 +225,42 @@ body
 {
     transform: translateX(0);
 }
+/** mobile **/
+@media (max-width:767px)
+{
+    .container h1
+    {
+        font-size: 20px;
+    }
+    .container
+    {
+        width: 568px;
+        max-width: 100%;
+        min-height: 400px;
+    }
+    .container .btn
+    {
+        padding: 10px 25px;
+    }
+    .container form
+    {
+        padding: 0 0px;
+        height: 100%;
+    }
+    .container input
+    {
+       
+        width: 80%;
+    }
+    
+    .toggle-container
+    {
+        border-radius: 50px 0 0 50px;
+    }
+    .container.active .toggle-container
+    {
+       
+        border-radius: 0 50px 50px 0;
+    }
+
+}
