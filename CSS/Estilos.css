@@ -2,8 +2,9 @@
 {
     padding: 0px;
     margin: 0px;
-    border: 0px;
-    font-size: 100%;
+    border: none;
+    box-sizing: border-box;
+
 }
 html
 {
@@ -63,8 +64,6 @@ section[id]
 }
 .barra_navegar li
 {
-   
-    font-family: 'Makisupa';
     display: flex;
     padding: 15px 10px;
     text-transform: uppercase;
