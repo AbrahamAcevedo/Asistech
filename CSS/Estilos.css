@@ -64,9 +64,9 @@ section[id]
 .barra_navegar li
 {
    
-    font-family: 'Makisupa';
+   
     display: flex;
-    padding: 15px 10px;
+    padding: 5px 10px;
     text-transform: uppercase;
     font-size: 15px;
     text-decoration: none;
@@ -89,8 +89,6 @@ section[id]
     font-family: 'Poppins-Black';
     font-weight: bold;
 }
-
-
 
 .boton_seccion ul
 {
@@ -479,4 +477,102 @@ h3
     position: absolute;
     right: 20px;
 }
+
+/** mobile **/
+@media (max-width:767px  )
+{
+    .barra_navegar
+    {
+        display: none;
+    }
+    .novedades
+    {
+        max-height: 90vh;
+    }
+    .Novedades
+    {
+        padding-top: 15vh;
+    }
+    .Calendario
+    {
+        height: 120vh;
+    }
+    .fecha h3
+    {
+        font-size: 20px;
+    }
+    .dia, .numeros
+    {
+        font-size: 20px;
+    }
+    .Calendario .fecha
+    {
+        max-width: 40vh;
+        padding-top: 15vh;
+    }
+    .Historia 
+    {
+      
+        min-height: 120vh;
+        font-size: 15px;
+    }
+    .persona_hist img
+    {
+        height: 150px;
+    }
+    .persona_hist p
+    {
+        padding-right: 0px;
+    }
+    .Población
+    {
+        min-height: 120vh;
+    }
+    .mv2{
+        padding-top: 10px;
+    }
+    .mv2 .vision
+    {
+        justify-content: space-between;
+        padding-bottom: 50vh;
+    }
+    .Contacto
+    {
+        min-height: 10vh;
+    }
+    .Contacto .contactanos i, .Contacto .contactanos h3
+    {
+        font-size: 12px;
+    }
+    .Contacto .redes_sociales i, .Contacto .redes_sociales h3
+    {
+        font-size: 20px;
+    }
+    .ftb
+    {
+        min-height: 10vh;
+    }
+    .Mision_Vision img
+    {
+        display: none;
+    }
+    .mv2
+    {
+        margin: auto;
+    }
+    
+}
+
+/** tablet **/
+@media (min-width: 768px) and (max-width: 990px)
+{
+
+}
+
+/** escritorio **/
+@media (min-width:991px)
+{
+
+}
+
 
