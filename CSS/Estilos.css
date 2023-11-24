@@ -66,7 +66,7 @@ section[id]
    
     font-family: 'Makisupa';
     display: flex;
-    padding: 5px 10px;
+    padding: 15px 10px;
     text-transform: uppercase;
     font-size: 15px;
     text-decoration: none;
@@ -84,7 +84,6 @@ section[id]
     color: black;
     list-style: none;
     cursor: pointer;
-    position: relative;
     text-decoration: none;
     font-family: 'Poppins-Black';
     font-weight: bold;
@@ -101,7 +100,7 @@ section[id]
     padding: 15px;
     margin-left: 81vh;
     outline: none;
-    margin-top: 2px;
+    margin-top: 10px;
     border-bottom-left-radius: 5px;
     font-size: 1rem;
     
@@ -115,7 +114,7 @@ section[id]
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    margin-top: 3.5px;
+    margin-top: 10px;
 }
 
 .boton_seccion ul
