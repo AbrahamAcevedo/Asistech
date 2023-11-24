@@ -2,9 +2,8 @@
 {
     padding: 0px;
     margin: 0px;
-    border: none;
-    box-sizing: border-box;
-
+    border: 0px;
+    font-size: 100%;
 }
 html
 {
@@ -64,6 +63,8 @@ section[id]
 }
 .barra_navegar li
 {
+   
+    font-family: 'Makisupa';
     display: flex;
     padding: 15px 10px;
     text-transform: uppercase;
@@ -83,10 +84,13 @@ section[id]
     color: black;
     list-style: none;
     cursor: pointer;
+    position: relative;
     text-decoration: none;
     font-family: 'Poppins-Black';
     font-weight: bold;
 }
+
+
 
 .boton_seccion ul
 {
