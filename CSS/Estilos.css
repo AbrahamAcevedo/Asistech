@@ -88,34 +88,6 @@ section[id]
     font-weight: bold;
 }
 
-.buscar_contenedor
-{
-    display: flex;
-}
-.buscar_contenedor input
-{
-    width: 250px;
-    height: 10px;
-    padding: 15px;
-    margin-left: 81vh;
-    outline: none;
-    margin-top: 10px;
-    border-bottom-left-radius: 5px;
-    font-size: 1rem;
-    
-}
-
-.buscar_contenedor button
-{
-    background-color: #fb7217;
-    width: 40px;
-    height: 35px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
 .boton_seccion ul
 {
     display: flex;
