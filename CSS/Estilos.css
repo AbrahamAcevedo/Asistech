@@ -319,18 +319,18 @@ ol .numeros
 .Estudiantes
 {
     padding: 10px;
-    height: 30px;
-    width: 30px;
+    height: 150px;
+    width: 150px;
     background-color: aqua;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 .Docentes
 {
     padding: 10px;
-    height: 30px;
-    width: 30px;
+    height: 150px;
+    width: 150px;
     background-color: aqua;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 .contenedor .cajas
 {

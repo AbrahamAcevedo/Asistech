@@ -36,11 +36,9 @@ h3, p
 {
     margin-left: 30px;
 }
-.logo a
+.logo img
 {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
+    width: 50px;
     font-size: 20px;
 }
 .barra_navegar
