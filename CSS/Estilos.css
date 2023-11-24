@@ -11,16 +11,18 @@ html
 }
 h1 
 {
-    font-family: 'Makisupa';
+    font-family: 'Poppins-Black';
+    font-weight: 900;
 }
 h2
 {
-    font-family: 'Montagu Slab 24pt SemiBold';
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
 }
-h3, p
+h3, p, h4
 {
-    font-family: 'Montagu Slab 24pt Light';  
-    font-weight: 550;
+    font-family: 'Poppins-Regular';  
+    font-weight: 400;
 }
 section[id]
 {
@@ -40,13 +42,15 @@ section[id]
 .logo
 {
     margin-left: 30px;
+    width: 20px;
 }
-.logo a
+.logo a img
 {
+    display: flex;
     text-decoration: none;
-    color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    width: 50px;
+    background-color: none;
 }
 .barra_navegar
 {
@@ -54,7 +58,7 @@ section[id]
     width: 100%;
     border-bottom: 2px solid #fb7217;
     position: fixed;
-    top: 6.5%;
+    margin-top: 2.8%;
     background-color: white;
 }
 .barra_navegar li
@@ -82,6 +86,8 @@ section[id]
     cursor: pointer;
     position: relative;
     text-decoration: none;
+    font-family: 'Poppins-Black';
+    font-weight: bold;
 }
 
 .buscar_contenedor
@@ -93,7 +99,7 @@ section[id]
     width: 250px;
     height: 10px;
     padding: 15px;
-    margin-left: 71vh;
+    margin-left: 81vh;
     outline: none;
     margin-top: 2px;
     border-bottom-left-radius: 5px;
@@ -118,6 +124,7 @@ section[id]
     padding: 10px 40px;
     text-decoration: none;
     list-style: none;
+    
 }
 
 .boton_seccion ul li a
@@ -127,6 +134,7 @@ section[id]
     color: white;
     cursor: pointer;
     position: relative;
+    font-family: Poppins-black;
 }
 
 .barra_navegar ul li a::after, .boton_seccion ul li a::after
@@ -187,7 +195,7 @@ section[id]
 .Novedades .scroll
 {
     flex: 0 0 30px;
-    margin-top: 25vh;
+    margin-top: 20vh;
     border-radius: 8px;
     scroll-snap-align: center;
 }
@@ -198,12 +206,14 @@ section[id]
     align-items: center;
     height: 92.8vh !important;
     object-fit: cover;
-    background-color: #d2d9db;
+    background-color: #2D73DB;
+    background: linear-gradient(to right, #72a6f4, #2D73DB);
     
 }
 .Calendario h2
 {
    padding: 30px;
+   color: white;
    
 }
 .fecha h3
@@ -212,18 +222,20 @@ section[id]
 }
 .Calendario .fecha
 {
-    padding: 10%;
+    padding: 20px;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 55px #fb7217;
 }
 .fecha
 {
     width: 100vh;
-    margin-top: 50px;
+    margin-top: 20vh;
+    margin-left: 40vh;
     text-align: center;
-    margin: 40px 585px;
     font-size: 20px;
+    background: white;
     
 }
 li
@@ -233,7 +245,7 @@ li
 }
 .titulo
 {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 ol 
@@ -261,7 +273,7 @@ ol .numeros
 }
 .dia
 {
-    background: #2D73DB;
+    background: #fb7217;
     font-weight: bold;
     text-align: center;
     font-size: 30px;
@@ -281,15 +293,26 @@ ol .numeros
     padding-top: 20vh;
     
 }
-.persona_hist 
+.relato
 {
-
-    text-align: left;
     display: flex;
+    background-color: #2D73DB;
+    background: linear-gradient(to right, #72a6f4, #2D73DB);
+    color: #fff;
+    margin-right: 100vh;
+    text-align: center;
+    height: 90%;
+    
+    border-radius: 0 150px 100px 0;
+    box-shadow: 0 0 55px #fb7217;
 }
-.persona_hist p
+.persona_hist img
 {
-    max-width: 500px;
+    display: flex;
+    float: right;
+    margin-top: -600px;
+    margin-right: 30vh;
+    height: 40vh;
 }
 .contenedor
 {
@@ -303,13 +326,19 @@ ol .numeros
 {
     height: 86.8vh !important;
     padding: 30px;
-    background: #d2d9db;
+    background-color: #2D73DB;
+    background: linear-gradient(to right, #72a6f4, #2D73DB);
     
+}
+.Población h2
+{
+    color: white;
 }
 .Población p
 {
     max-width: auto; 
     text-align: center;
+    color: white;
 }
 .contenedor
 {
@@ -338,10 +367,10 @@ ol .numeros
 {
     height: auto;
     width: 20rem;
-    background: #101010;
+    background: white;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0.3 5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0 55px #fb7217;
     margin: 2rem;
 }
 .im
@@ -358,7 +387,7 @@ ol .numeros
     line-height: 2rem;
     text-align: center;
     border-radius: 50%;
-    color: #fff;
+    color: black;
 }
 .Mision_Vision
 {
@@ -385,7 +414,7 @@ h3
     float: left;
     height: 60vh;
     width: 60vh;
-    padding-top: 24.8vh;
+    padding-top: 10vh;
     padding-left: 20vh;
     
 }
@@ -401,23 +430,23 @@ h3
 {
     display: flex;
     background-color: #2D73DB;
-    height: 100%;
     background: linear-gradient(to right, #72a6f4, #2D73DB);
     color: #fff;
     margin-left: 100vh;
     justify-content: center;
     text-align: center;
-    height: 100%;
+    height: 90%;
     overflow: hidden;
     border-radius: 150px 0 0 100px;
     flex-wrap: wrap;
+    box-shadow: 0 0 55px #fb7217;
 }
 .Contacto
 {
     display: block;
     padding-top: 15px;
     height: 10vh;
-    background-color: #d2d9db;
+    background-color: white;
 }
 .Contacto .contactanos
 {
@@ -428,6 +457,23 @@ h3
 .contactanos .icon1
 {  
     display: flex;
+    margin-top: 10px;
+}
+.iconos
+{
+    margin: 10px 5px;
+}
+.iconos a
+{
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+    color: #fb7217;
 }
 .icon1 h3
 {
@@ -437,9 +483,19 @@ h3
 .contactanos .icon2
 {
     display: flex;
+    margin-top: 10px;
+}
+.contactanos .icon2 i
+{
+    color: #fb7217;
+}
+.contactanos .icon1 i
+{
+    color: #fb7217;
 }
 .icon2 h3
 {
+  
     padding-left: 10px;
     font-size: 15px;
 }
@@ -448,68 +504,6 @@ h3
     font-size: 20px;
     position: absolute;
     right: 20px;
-}
-.redes_sociales .iconos
-{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column(2);
-    justify-content: space-between;
-    font-size: 20px;
-}
-.iconos a
-{
-    background-color: #d2d9db;
-    position: relative;
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
-    display: inline-flex;
-    text-decoration: none;
-    border-radius: 50%;
-    transition: all 0.3s;
-    box-shadow:  -3px -3px 7px #fb7217, 3px 3px 5px #ceced1;
-}
-.iconos a:hover::before
-{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-}
-
-.iconos a i
-{
-    position: relative;
-    z-index: 3;
-    justify-content: center;
-   
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-}
-.iconos a:hover
-{
-    transform: scale(0.9);
-}
-.iconos a .face i
-{
-    color: #0e56e6;
-}
-.iconos a .what i
-{
-    color: green;
-}
-.iconos a .inst i
-{
-    color: #e1306c;
 }
 
 /** mobile **/

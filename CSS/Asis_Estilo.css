@@ -3,6 +3,21 @@ body { padding: 0;
     margin: 0;
     
     }
+    h1, a
+    {
+        font-family: 'Poppins-Black';
+        font-weight: 900;
+    }
+    h2
+    {
+        font-family: 'Poppins-Medium';
+        font-weight: 500;
+    }
+    h3, p, h4
+    {
+        font-family: 'Poppins-Regular';  
+        font-weight: 400;
+    }
     header {
         background-color: #2D73DB;
         
@@ -296,14 +311,22 @@ body { padding: 0;
         display: flex;
         color: black;
         margin-top: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 40px;
+        margin-right: 50px;
         align-items: center;
         justify-content: center;
         text-align: center;
         box-shadow: 0 0 25px #2D73DB;
         
        
+    }
+    
+    #asistencia
+    {
+      margin-left: 15px;
+    }
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
     }
     th, tr
     {
@@ -314,6 +337,7 @@ body { padding: 0;
     th
     {
       background-color: #fb7217;
+      color: white;
       
     }
     .historial
@@ -324,6 +348,11 @@ body { padding: 0;
     {
         background-color: #d2d9db;
         
+    }
+    .total
+    {
+      margin-top: 50px;
+      margin-left: 40px;
     }
     
     /** mobile **/

@@ -7,6 +7,22 @@ body
 {
     background-color: #d2d9db;
 }
+
+h1, a
+{
+    font-family: 'Poppins-Black';
+    font-weight: 900;
+}
+h2
+{
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+}
+h3, p, h4
+{
+    font-family: 'Poppins-Regular';  
+    font-weight: 400;
+}
 header {
     background-color: #2D73DB;
     

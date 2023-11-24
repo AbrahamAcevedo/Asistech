@@ -2,7 +2,21 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+h1, a
+{
+    font-family: 'Poppins-Black';
+    font-weight: 900;
+}
+h2
+{
+    font-family: 'Poppins-Medium';
+    font-weight: 500;
+}
+h3, p
+{
+    font-family: 'Poppins-Regular';  
+    font-weight: 400;
+}
   header {
     background-color: #2D73DB;
     
@@ -55,15 +69,7 @@ body {
   main h1{
     margin-left: 80px;
   }
-  main
-  
-  .sobre
-  {
-    margin-left: 130px;
-    background-color: #fb7217;
-    width: 110px;
-    text-align: center;
-  }
+
   #edit-profile {
     background-color: #fff;
     padding-top: 30px ;
@@ -129,9 +135,13 @@ body {
     color: #fb7217;
   }
   footer {
+    display: flex;
     background-color: #222;
-    padding: 10px 0;
+    padding: 10px;
+    justify-content: center;
     text-align: center;
+    margin-top: 18px;
+
   }
   
   footer p {

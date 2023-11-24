@@ -10,7 +10,8 @@ header {
   
   header img {
     height: 60px;
-    width: 120px;;
+    width: 120px;
+    
     
   }
   .img_left
@@ -53,3 +54,224 @@ header {
     text-decoration: none;
     padding: 5px 20px;
   }
+
+  .buscar_contenedor
+{
+    display: flex;
+    margin-top: 20px;
+    float: right;
+    margin-right: 30px;
+}
+.buscar_contenedor input
+{
+    width: 250px;
+    height: 0px;
+    padding: 15px;
+    margin-left: 81vh;
+    outline: none;
+    margin-top: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.buscar_contenedor button
+{
+    background-color: #fb7217;
+    width: 40px;
+    height: 32px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-top: 2px;
+}
+.Contenedor_Tabla
+{
+  display: flex;
+  margin: 20vh;
+  justify-content: center;
+}
+table{
+  
+  font-size: 20px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid #fb7217;
+  box-shadow: 0 0 55px #2D73DB;
+  width: 170vh;
+}
+thead
+{
+  color: white;
+  background: #fb7217;
+}
+th
+{
+  padding: 15px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+td
+{
+  padding: 15px;
+  border-bottom: 2px solid #fb7217;
+  text-align: center;
+}
+tbody tr:hover
+{
+  background: #f3c4a4;
+}
+tr td a
+{
+  color: #2D73DB;
+  padding-left: 10px;
+}
+
+ .boton-modal label
+ {
+    padding-left: 10px;
+    color: #2D73DB;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 300ms ease;
+ }
+ #btn-modal
+ {
+    display: none;
+   
+ }
+ .container-modal
+ {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+ }
+ #btn-modal:checked ~ .container-modal
+ {
+    display: flex;
+ }
+ .content-modal
+ {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+   
+ }
+ .content-modal h4
+ {
+    margin-bottom: 15px;
+ }
+ .v1, .v2, .v3, .v4
+ {
+    padding-top: 20px;
+    display: flex;
+ }
+ .v1 p, .v2 p, .v3 p, .v4 p
+ {
+    padding-left: 50px;
+ }
+ 
+ .content-modal .btn-cerrar
+ {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ }
+ .content-modal .btn-cerrar label
+ {
+    padding: 7px 10px;
+    background-color: #2D73DB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+ }
+
+ /* lol*/
+ .navegadores
+ {
+  display: flex;
+  justify-content: center;
+ }
+ .editar label
+ {
+  padding-left: 10px;
+    
+    color: #2D73DB;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 300ms ease;
+ }
+ #btn-edit
+ {
+    display: none;
+   
+ }
+ .container
+ {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+ }
+ #btn-edit:checked ~ .container
+ {
+    display: flex;
+ }
+ .content
+ {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+   
+ }
+ .content h4
+ {
+    margin-bottom: 15px;
+ }
+ .v1, .v2, .v3, .v4
+ {
+    padding-top: 20px;
+    display: flex;
+ }
+ .v1 input, .v2 input, .v3 input, .v4 input
+ {
+   margin-left: 50px;
+ }
+ 
+ .content .close
+ {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+ }
+ .content .close label
+ {
+    padding: 7px 10px;
+    background-color: #2D73DB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 300ms;
+ }
+ 

@@ -70,14 +70,10 @@ header {
     text-decoration: none;
     padding: 5px 20px;
   }
-  .botones
-  {
-    margin-left: 50px;
-    margin-top: 40px;
-  }
   button
   {
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
   }
   .btn1 a
   {
@@ -111,7 +107,7 @@ header {
   {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: white;
     height: 50vh;
     width: 55vh;
@@ -120,12 +116,14 @@ header {
     margin-top: 20vh;
     box-shadow: 0 0 15px #fb7217;
   }
-  .nom, .usua, .contra, .id, .clase, .Email 
+  .nom, .Edad, .tutor, .Asignatura, .Grado
   {
     display: flex;
-    margin-top: 20px;
+    padding-left: 25%;
+    padding-top: 20px;
+    
   }
-  .nom input, .usua input, .contra input, .id input, .clase input, .Email input
+  .nom input, .Edad input, .tutor input, .Asignatura input, .Grado input
   {
     margin-left: 20px;
     padding: 10px;
@@ -134,10 +132,13 @@ header {
   {
     border-radius: 8px;
     outline: none;
+    padding: 10px;
   }
   .agregar
   {
-    margin-top: 20px;
+    width: 25%;
+    margin-top: 40px;
+    margin-left: 20vh;
     border: none;
     color: white;
     background-color: #2D73DB;
