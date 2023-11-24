@@ -63,8 +63,6 @@ section[id]
 }
 .barra_navegar li
 {
-   
-   
     display: flex;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -106,7 +104,6 @@ section[id]
     color: white;
     cursor: pointer;
     position: relative;
-    font-family: Poppins-black;
 }
 
 .barra_navegar ul li a::after, .boton_seccion ul li a::after
